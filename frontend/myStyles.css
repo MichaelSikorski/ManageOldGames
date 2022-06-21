@@ -1,0 +1,20 @@
+h1 {
+	background-color: #f2bc00;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+.contents {
+	max-width: 1024px;
+}
+
+.contents > details {
+	text-align: center;
+}
+
+.centeredForm {
+	width: fit-content;
+	margin: 0 auto;
+}
