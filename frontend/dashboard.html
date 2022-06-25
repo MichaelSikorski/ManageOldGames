@@ -4,35 +4,44 @@
 		<title>Manage Old Games - Dashboard</title>
 		<link rel="stylesheet" type="text/css" href="myStyles.css">
 	</head>
-	<body>
+	<body onload="fetchGamesList()">
 		
 		<div class="contents">
 			
 			<h1>Manage Old Games</h1>
 			<h2>Dashboard</h2>
 			<span style="float:right;"><a href="#">Log out</a></span>
-			
-			<details style="clear:both;">
-				<summary>Add games</summary>
-				<p>Placeholder for adding games</p>
-			</details>
-			
-			<details>
-				<summary>View games</summary>
-				<p>Placeholder for viewing games</p>
-			</details>
-			
-			<details>
-				<summary>Update existing games</summary>
-				<p>Placeholder for updating existing games</p>
-			</details>
-			
-			<details>
-				<summary>Delete games</summary>
-				<p>Placeholder for deleting games</p>
-			</details>
+
+			<button onclick="fetchGamesList()">Refresh list</button>
+			<table id="gameTable">
+				<thead>
+					<tr>					
+						<th>Number</th>
+						<th>Title</th>
+						<th>Platform</th>
+						<th>Genre</th>
+						<th>Release Date</th>
+						<th>Price</th>
+						<th>Stock</th>
+					</tr>
+				</thead>
+				<tbody>
+					<template>
+						<tr>					
+							<td>1</td>
+							<td>Title</td>
+							<td>Platform</td>
+							<td>Genre</td>
+							<td>Release Date</td>
+							<td>Price</td>
+							<td>Stock</td>
+						</tr>
+					</template>
+				</tbody>
+			</table>
 		</div>
 		
 	</body>
-	<script src="myScript.js"></script> 
+	<script src="myScript.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </html> 

@@ -18,3 +18,14 @@ h1, h2 {
 	width: fit-content;
 	margin: 0 auto;
 }
+
+#gameTable {
+	margin: 0 auto;
+	border-collapse: collapse;
+	clear: both;
+}
+
+td, th {
+	border: 1px solid black;
+	padding: 8px;
+}
